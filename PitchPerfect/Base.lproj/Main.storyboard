@@ -23,14 +23,34 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ob-2H-2Md"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCi-X4-yKv">
+                                <rect key="frame" x="153.5" y="471" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jg-Pk-lS8">
+                                <rect key="frame" x="155.5" y="500" width="103" height="30"/>
+                                <state key="normal" title="Stop Rrcording"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57h-GQ-ywn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="5WQ-0B-pYS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Q7-33-7n8"/>
+                            <constraint firstItem="1jg-Pk-lS8" firstAttribute="centerX" secondItem="eCi-X4-yKv" secondAttribute="centerX" id="YtX-on-TtN"/>
                             <constraint firstItem="5WQ-0B-pYS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="h0V-sk-v8d"/>
+                            <constraint firstItem="1jg-Pk-lS8" firstAttribute="top" secondItem="eCi-X4-yKv" secondAttribute="bottom" constant="8" id="hRU-I4-BtV"/>
+                            <constraint firstItem="eCi-X4-yKv" firstAttribute="centerX" secondItem="5WQ-0B-pYS" secondAttribute="centerX" id="jeA-xm-Bm8"/>
+                            <constraint firstItem="eCi-X4-yKv" firstAttribute="top" secondItem="5WQ-0B-pYS" secondAttribute="bottom" constant="8" id="kCi-DZ-ON4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="eCi-X4-yKv" id="rnn-fr-BgT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
