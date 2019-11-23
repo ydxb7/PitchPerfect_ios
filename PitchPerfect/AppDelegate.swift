@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PitchPerfect
 //
-//  Created by Yini Duanmu on 11/19/19.
+//  Created by Yini Duanmu on 11/22/19.
 //  Copyright © 2019 Yini Duanmu. All rights reserved.
 //
 
@@ -15,8 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        print("hello, world")
+        print("hello, yini!")
         return true
     }
 
